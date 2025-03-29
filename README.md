@@ -56,5 +56,16 @@ EmployWise is a React-based application for managing users, with login authentic
 - Users have `id`, `first_name`, `last_name`, `email`, and `avatar` fields.
 
 ---
+
+## **User Credentials**
+To test the application, use the following login credentials:
+
+- **Email:** `eve.holt@reqres.in`
+- **Password:** `cityslicka`
+
+**Note:** These credentials are mandatory for logging in to the application and testing its functionality.
+
+---
+
 ## **LIVE DEMO** ##
--- ** https://employ-wise-azure.vercel.app/ ** --
+-- ** https://employ-wise-alpha.vercel.app/ ** --
