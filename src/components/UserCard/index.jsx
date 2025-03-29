@@ -3,7 +3,7 @@ import "./index.css";
 
 const UserCard = ({ user, onEdit, onDelete }) => {
   return (
-    <div key={user.id} className="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <article className="col-lg-4 col-md-6 col-sm-12 mb-4">
       <div className="card shadow user-card p-4">
         <img
           src={user.avatar}
@@ -11,9 +11,9 @@ const UserCard = ({ user, onEdit, onDelete }) => {
           className="card-img-top"
         />
         <div className="card-body">
-          <h5 className="card-title">
+          <h3 className="card-title">
             {user.first_name} {user.last_name}
-          </h5>
+          </h3>
           <p className="card-text">{user.email}</p>
           <button
             className="btn btn-primary me-2"
@@ -21,12 +21,15 @@ const UserCard = ({ user, onEdit, onDelete }) => {
           >
             Edit
           </button>
-          <button className="btn btn-danger" onClick={() => onDelete(user.id)}>
+          <button
+            className="btn btn-danger"
+            onClick={() => onDelete(user.id)}
+          >
             Delete
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

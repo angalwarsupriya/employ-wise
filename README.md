@@ -1,12 +1,60 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# EmployWise - User Management App
 
-Currently, two official plugins are available:
+EmployWise is a React-based application for managing users, with login authentication, user list management, CRUD operations and Dynamic filtering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## **Getting Started**
+### **Installation Steps**
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/angalwarsupriya/employ-wise
+   cd employwise
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the project:
+   ```bash
+   npm start
+   ```
+4. Build for production:
+   ```bash
+   npm run build
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## **Features**
+- Secure login using tokens.
+- Manage users with pagination, search, and filter.
+- Edit and delete users with real-time updates.
+- Protected routes for authenticated access.
+- Responsive design with Bootstrap integration.
+
+
+## **Tech Stack**
+- React, React Router, Context API
+- Bootstrap, Custom CSS
+- Axios for API requests
+- Reqres API for data handling
+
+---
+
+## **API Endpoints**
+- `POST /login` - User authentication
+- `GET /users?page={page}` - Fetch users
+- `PUT /users/{id}` - Edit user
+- `DELETE /users/{id}` - Delete user
+
+---
+
+## **Assumptions**
+- Uses Reqres API for testing purposes.
+- Users have `id`, `first_name`, `last_name`, `email`, and `avatar` fields.
+
+---
+## **LIVE DEMO** ##
+-- ** https://employ-wise-azure.vercel.app/ ** --

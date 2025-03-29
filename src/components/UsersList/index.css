@@ -33,3 +33,8 @@ button:disabled {
   font-size: 1.2rem;
   margin: 2rem 0;
 }
+.img{
+  height: 70%;
+  width: 35%;
+  margin-bottom: 30px;
+}

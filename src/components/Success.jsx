@@ -1,5 +1,5 @@
 import React from "react";
-import UserCard from "./UserCard";
+import UserCard from './UserCard'
 import EmptyResults from "./EmptyResults";
 
 const Success = ({
@@ -12,7 +12,7 @@ const Success = ({
   page,
 }) => {
   return (
-    <>
+    <section>
       {/* Search Bar */}
       <div className="mb-4">
         <input
@@ -21,6 +21,7 @@ const Success = ({
           placeholder="Search users by name or email..."
           value={searchQuery}
           onChange={handleSearch}
+          aria-label="Search users"
         />
       </div>
 
@@ -46,17 +47,20 @@ const Success = ({
           className="btn btn-secondary"
           onClick={() => setPage(page - 1)}
           disabled={page === 1}
+          aria-label="Previous Page"
         >
           Previous
         </button>
         <button
           className="btn btn-secondary"
           onClick={() => setPage(page + 1)}
+          disabled={page === 2}
+          aria-label="Next Page"
         >
           Next
         </button>
       </div>
-    </>
+    </section>
   );
 };
 
